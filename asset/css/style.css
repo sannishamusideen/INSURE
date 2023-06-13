@@ -165,8 +165,33 @@ footer .footer_copy .last_page ul li {
 }
 
 @media (max-width: 910px) {
-  nav {
-    display: none;
+  .section {
+    position: relative;
+  }
+  .ovss {
+    overflow: hidden;
+  }
+
+  .nav_logo .nav_list {
+    display: block;
+    background-color: white;
+    position: absolute;
+    padding: 10px;
+    width: 220px;
+    right: 0;
+    transform: translateX(300px);
+    transition: 0.9s;
+    top: 60px;
+    /* z-index: 99; */
+  }
+  .fabulous {
+    transform: translateX(0px) !important;
+  }
+
+  .nav_logo .nav_list li {
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
   }
   .container_mobile {
     max-width: 850px;
@@ -191,6 +216,9 @@ footer .footer_copy .last_page ul li {
 }
 @media (min-width: 912px) {
   header {
+    display: none;
+  }
+  .del_hamburger {
     display: none;
   }
   .img_sec {
@@ -247,11 +275,13 @@ footer .footer_copy .last_page ul li {
     top: 363px;
     width: 10%;
   }
-  .sec_section .sec_flex .pattern_right {
-    width: 60%;
+  .pattern_right {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     position: absolute;
-    right: -88px;
-    top: -100px;
+    right: 0;
+    top: 0;
   }
   .process_snappy {
     margin-bottom: 70px;
