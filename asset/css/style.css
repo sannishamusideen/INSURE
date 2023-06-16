@@ -164,9 +164,29 @@ footer .footer_copy .last_page ul li {
   margin: 10px;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 911px) {
   nav {
-    display: none;
+    position: relative;
+  }
+  .overflow {
+    overflow: hidden;
+  }
+  .nav_list {
+    display: block;
+    position: absolute;
+    background-color: white;
+    right: -20px;
+    top: 78px;
+    width: 300px;
+    transform: translateX(320px);
+    transition: 0.6s;
+  }
+  .active {
+    transform: translateX(0);
+  }
+  .nav_list li,
+  .nav_list button {
+    margin: 20px;
   }
   .container_mobile {
     max-width: 850px;
@@ -191,6 +211,9 @@ footer .footer_copy .last_page ul li {
 }
 @media (min-width: 912px) {
   header {
+    display: none;
+  }
+  .hamburger {
     display: none;
   }
   .img_sec {
@@ -247,11 +270,13 @@ footer .footer_copy .last_page ul li {
     top: 363px;
     width: 10%;
   }
-  .sec_section .sec_flex .pattern_right {
-    width: 60%;
+  .sec_section .pattern_right {
+    width: 300px;
+    height: 300px;
     position: absolute;
-    right: -88px;
-    top: -100px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
   }
   .process_snappy {
     margin-bottom: 70px;
