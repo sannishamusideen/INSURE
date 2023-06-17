@@ -134,7 +134,7 @@ nav {
 }
 footer {
   background-color: #f4f5f7;
-  padding: 70px 0;
+  padding: 70px 0 20px;
 }
 
 .footer {
@@ -160,6 +160,28 @@ footer li {
 footer ul a {
   margin-top: 20px;
   display: inline-block;
+}
+hr {
+  margin-top: 60px;
+  color: rgb(223, 225, 229);
+}
+ul li img {
+  width: 20px;
+}
+.copyright {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.copyright .social {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+.copyright .social li {
+  margin: 10px;
 }
 
 @media (max-width: 911px) {
@@ -335,6 +357,14 @@ footer ul a {
   .process_anony .find_anony img {
     position: absolute;
     right: 0px;
+    top: 0;
+  }
+  .copyright .function {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+  }
+  .copyright .social {
     top: 0;
   }
 }
