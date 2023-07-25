@@ -26,13 +26,15 @@ nav {
   display: flex;
   justify-content: space-between;
   word-spacing: 5px;
+  align-items: center;
 }
-.container nav .nav_logo .nav_list {
+.container nav .nav_logo .nav_list li a {
   font-size: 14px;
   align-items: center;
   color: rgb(165, 163, 167);
+  text-decoration: none;
 }
-.container nav .nav_logo .nav_list li:hover {
+.container nav .nav_logo .nav_list li a:hover {
   color: rgb(43, 41, 47);
 }
 .container nav .nav_logo .nav_list button {
